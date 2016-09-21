@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <Pane layoutX="14.0" layoutY="63.0" prefHeight="315.0" prefWidth="478.0" style="-fx-border-color: #000;">
+         <children>
+            <Canvas fx:id="canvas" height="305.0" layoutX="5.0" layoutY="5.0" width="468.0" />
+         </children>
+      </Pane>
+      <Label layoutX="150.0" layoutY="21.0" text="TurtleLogo SENAI">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnAndar" layoutX="150.0" layoutY="439.0" mnemonicParsing="false" onAction="#andarFrente" text="Andar" />
+      <TextField fx:id="txtComando" layoutX="14.0" layoutY="394.0" prefHeight="25.0" prefWidth="410.0" promptText="Comando" />
+      <Button fx:id="btnEsquerda" layoutX="74.0" layoutY="439.0" mnemonicParsing="false" onAction="#virarEsquerda" text="esquerda" />
+      <Button fx:id="btnDireita" layoutX="209.0" layoutY="439.0" mnemonicParsing="false" onAction="#virarDireita" prefHeight="25.0" prefWidth="57.0" text="Direita" />
+      <Button fx:id="btnExecutar" layoutX="431.0" layoutY="394.0" mnemonicParsing="false" text="Executar" onAction="#executar" />
+   </children>
+</AnchorPane>
